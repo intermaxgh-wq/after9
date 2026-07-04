@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AFTER9 — Streetwear for the hours after dark</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<nav>
+  <a href="#home" class="wordmark">AFTER<span>9</span></a>
+  <ul class="navlinks" id="navlinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="navclock" id="navclock">ACCRA — <b>--:--</b></div>
+  <button class="navtoggle" id="navtoggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-top pad-x">
+    <div class="hero-eyebrow eyebrow"><span class="dot"></span> ACCRA · AFTER DARK ONLY</div>
+    <h1 class="glitch" data-text="AFTER9">AFTER9</h1>
+    <p class="hero-sub">The city changes after 9. We make streetwear for the hours after the offices empty out and the real ones come out — cut in small batches, made in Accra.</p>
+    <a href="#shop" class="hero-cta">Coming Soon</a>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>LIMITED DROP <b>✦</b> MADE IN ACCRA <b>✦</b> AFTER DARK ONLY <b>✦</b> NO RESTOCKS <b>✦</b> AFTER9 <b>✦</b> LIMITED DROP <b>✦</b> MADE IN ACCRA <b>✦</b> AFTER DARK ONLY <b>✦</b> NO RESTOCKS <b>✦</b> AFTER9 <b>✦</b></span>
+    </div>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="drop-banner">99 Pieces <b>✦</b> No Restocks</div>
+
+  <div class="spotlight-grid">
+    <div class="spotlight-media">
+      <div class="media-card"><img src="assets/img/tee-front.jpg" alt="AFTER9 Limited Edition Tee — front, black with camo sleeve panels"></div>
+      <div class="media-card"><img src="assets/img/tee-back.jpg" alt="AFTER9 Limited Edition Tee — back, with purple and grey leopard print"></div>
+    </div>
+
+    <div class="spotlight-info">
+      <div class="eyebrow">Limited Edition</div>
+      <h2 class="spotlight-title">Limited Edition Tee</h2>
+      <div class="spotlight-price">GHS 300 <span>99 pieces, ever. No restocks.</span></div>
+
+      <div class="drop-badge" id="dropBadge">Drops Aug 1 · 12:00 GMT</div>
+
+      <div class="countdown" id="countdownWrap" aria-hidden="true">
+        <div class="cd-unit"><span id="cdDays">00</span><label>Days</label></div>
+        <div class="cd-unit"><span id="cdHours">00</span><label>Hrs</label></div>
+        <div class="cd-unit"><span id="cdMins">00</span><label>Min</label></div>
+        <div class="cd-unit"><span id="cdSecs">00</span><label>Sec</label></div>
+      </div>
+
+      <form id="notifyForm" class="notify-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="email" id="notifyEmail" name="email" placeholder="you@email.com" required aria-label="Email for drop notification">
+        <button type="submit">Notify Me</button>
+      </form>
+      <div class="notify-hint">We'll email you the moment it drops. No spam, one email.</div>
+
+      <button class="hero-cta" id="leBuyBtn" type="button" style="display:none;">Coming Soon — GHS 300</button>
+    </div>
+  </div>
+</section>
+
+<section id="coming-soon">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow" style="margin-bottom:10px;">Coming Soon</div>
+      <h2 class="section-title">More on the way.</h2>
+    </div>
+    <div class="section-note">Five more pieces landing soon. Rotates automatically — click a piece or use the arrows to browse.</div>
+  </div>
+
+  <div class="carousel-wrap">
+    <div class="aura"><div class="blob-a"></div><div class="blob-b"></div></div>
+    <div class="stage" id="stage"></div>
+    <div class="stage-controls">
+      <button class="arrow-btn" id="prevBtn" type="button" aria-label="Previous piece">‹</button>
+      <div class="dots" id="dots"></div>
+      <div class="counter" id="counter">01 / 05</div>
+      <button class="arrow-btn" id="nextBtn" type="button" aria-label="Next piece">›</button>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-head">
+    <h2 class="section-title">About</h2>
+    <div class="section-note">Accra, Ghana. Founded by people who kept designing after the day job ended.</div>
+  </div>
+  <div class="about-wrap">
+    <div class="about-visual"><img class="about-img" src="assets/img/about-graphic.jpg" alt="AFTER9 brand graphic"></div>
+    <div class="about-copy">
+      <p><strong>AFTER9 started as a name in a group chat</strong> — a joke about the only hours we had free to actually make anything. Full-time jobs by day, sketching and cutting patterns by night. The name stuck because it was true: everything we make is built after 9.</p>
+      <p>We work with tailors across Accra, cut in small batches, and drop when a piece is ready rather than on a fashion calendar. No overproduction, no seasons — just gear made for people who are still out when everyone else has gone home.</p>
+      <div class="about-stats">
+        <div class="stat"><b>2026</b><span>Founded</span></div>
+        <div class="stat"><b>12</b><span>Tailors we work with</span></div>
+        <div class="stat"><b>100%</b><span>Made in Accra</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head">
+    <h2 class="section-title">Contact</h2>
+    <div class="section-note">Restock alerts, wholesale, or just say what's up.</div>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-copy">
+      <p>DM us for wholesale, collabs, or if a size ran out before you could grab it — we keep small runs of most pieces in reserve.</p>
+      <ul class="social-list">
+        <li><a href="https://instagram.com/after9_world" target="_blank" rel="noopener">Instagram <span>@after9_world</span></a></li>
+        <li><a href="https://wa.me/233201696641" target="_blank" rel="noopener">WhatsApp <span>+233 20 169 6641</span></a></li>
+        <li><a href="https://tiktok.com/@after9_world" target="_blank" rel="noopener">TikTok <span>@after9_world</span></a></li>
+        <li><a href="mailto:hello@after9.store">Email <span>hello@after9.store</span></a></li>
+      </ul>
+    </div>
+    <form onsubmit="event.preventDefault(); this.querySelector('.submit-btn').textContent='Sent ✓';">
+      <div class="field"><label for="cname">Name</label><input id="cname" type="text" required></div>
+      <div class="field"><label for="cemail">Email</label><input id="cemail" type="email" required></div>
+      <div class="field"><label for="cmessage">Message</label><textarea id="cmessage" required></textarea></div>
+      <button class="submit-btn" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 AFTER9 — ACCRA, GHANA</span>
+  <span id="footerClock">LOCAL TIME <b>--:--:--</b></span>
+</footer>
+
+<div class="modal-overlay" id="checkoutModal">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close" type="button">×</button>
+    <h3 id="modalProductName">Product</h3>
+    <div class="modal-price" id="modalProductPrice">GHS 0</div>
+    <form id="checkoutForm">
+      <label for="checkoutEmail">Email for receipt</label>
+      <input id="checkoutEmail" type="email" required placeholder="you@email.com">
+      <button class="pay-btn" type="submit">Notify Me</button>
+    </form>
+    <div class="modal-note">Pre-launch drop. Join the waitlist.</div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
